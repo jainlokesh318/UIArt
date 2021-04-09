@@ -3,6 +3,9 @@
   --secondary-grey: #e5e7eb;
   --white: white;
   --general-size: 1.5rem;
+
+  /* alerts */
+  --alert-primary: #bfdbfe;
 }
 
 * {
