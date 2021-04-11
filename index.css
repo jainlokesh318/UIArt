@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -53,7 +54,7 @@
   display: block;
   margin: auto;
   height: 60%;
-  margin-top: 50px;
+  margin-top: 15vh;
 }
 
 .main .main-right {

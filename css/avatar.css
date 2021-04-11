@@ -3,6 +3,7 @@
   --secondary-grey: #e5e7eb;
   --white: white;
   --general-size: 1.5rem;
+  --green-yellow: #10b981;
 }
 
 * {
@@ -11,6 +12,7 @@
   box-sizing: border-box;
   font-size: 2.7vh;
 }
+
 .container {
   display: grid;
   height: 100vh;
@@ -46,6 +48,7 @@
 }
 
 .container .sidebar {
+  position: relative;
   grid-row: 1 / span 2;
   grid-column: 1 / span 2;
   display: flex;
@@ -85,4 +88,83 @@
 
 .header .active {
   border-bottom: 1px solid var(--primary-grey);
+}
+
+.main-body {
+  margin-left: 2vw;
+}
+
+.avatars-with-image,
+.avatars-with-badge {
+  display: flex;
+  padding: 1rem;
+  font-size: large;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  gap: 1.5rem;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.avatar-small {
+  height: 4rem;
+  width: 4rem;
+  font-size: 0.8rem;
+}
+
+.avatar-medium {
+  height: 6rem;
+  width: 6rem;
+  font-size: 1.4rem;
+}
+
+.avatar-large {
+  height: 8rem;
+  width: 8rem;
+  font-size: 2rem;
+}
+
+.badge_round {
+  border-radius: 50%;
+  background-color: var(--green-yellow);
+  position: absolute;
+  border: 3px solid var(--white);
+}
+
+.avatar-small .badge_round {
+  height: 1rem;
+  width: 1rem;
+  bottom: 10%;
+  left: 68%;
+}
+
+.avatar-medium .badge_round {
+  height: 1.3rem;
+  width: 1.3rem;
+  bottom: 10%;
+  left: 68%;
+}
+
+.avatar-large .badge_round {
+  height: 1.6rem;
+  width: 1.6rem;
+  bottom: 10%;
+  left: 68%;
 }
